@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityFragm
 
         initInstances();
 
-        reactiveNetwork = new ReactiveNetwork();
     }
 
     private void initInstances() {
@@ -47,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityFragm
     }
 
     protected void registerObserveWifiAccessPoints() {
+        reactiveNetwork = new ReactiveNetwork();
         reactiveNetwork.observeWifiAccessPoints(this)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
