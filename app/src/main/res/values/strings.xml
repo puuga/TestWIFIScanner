@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test WIFI Scanner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_ssid">SSID</string>
+    <string name="text_signal">signal</string>
+</resources>
